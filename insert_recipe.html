@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Insert Recipe Form</title>
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+<script src="JS/addEntry.js" language="Javascript" type="text/javascript"></script>
+
+
+
+</head>
+
+<body>
+
+<p>
+    <ul class = "topnav">
+    <li><a href = "index.html">Home</a></li>
+    <li class ="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">View Recipes</a>
+        <div class="dropdown-content">
+            <a href = "all_recipes.php">View All Recipes</a>
+            <a href = "select_recipes_first.php">View Selected Recipe</a>
+        </div>
+    </li>
+    <li class ="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Recipes</a>
+        <div class="dropdown-content">
+            <a href = "select_ingredients.php">Insert Recipe</a>
+            <a href = "delete_select_recipe.php">Delete Recipe</a>
+        </div>
+    </li>
+    <li>
+    <li class ="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Ingredients</a>
+        <div class="dropdown-content">
+            <a href = "create_ingredients.html">Insert Ingredient</a>
+            <a href = "delete_select_ingredients.php">Delete Ingredients</a>
+        </div>
+    </li>
+    <li><a href = "about.html">About</a></li>
+    <li><a href = "future.html">Upcoming</a></li>
+
+</ul>
+		<br>
+
+<form action="insert_recipe.php" method="post">
+     
+			<label>Recipe Name</label>
+			<input type="text" name="recipename">
+			
+		<div id="ingredients">	
+		
+		</div>	
+		<input type="hidden" name ="counter" id="counter" value="">
+		<br>
+		<input type="submit" value="Insert Recipe"> <input type="button" value="Add ingredient" onClick="addIngredient();">
+</form>
+</body>
+</html>

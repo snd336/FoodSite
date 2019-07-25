@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>About</title>
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+   </head>
+
+   <body>
+      <p>
+<ul class = "topnav">
+    <li><a href = "index.html">Home</a></li>
+    <li class ="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">View Recipes</a>
+        <div class="dropdown-content">
+            <a href = "all_recipes.php">View All Recipes</a>
+            <a href = "select_recipes_first.php">View Selected Recipe</a>
+        </div>
+    </li>
+    <li class ="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Recipes</a>
+        <div class="dropdown-content">
+            <a href = "select_ingredients.php">Insert Recipe</a>
+            <a href = "delete_select_recipe.php">Delete Recipe</a>
+        </div>
+    </li>
+    <li>
+    <li class ="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Ingredients</a>
+        <div class="dropdown-content">
+            <a href = "create_ingredients.html">Insert Ingredient</a>
+            <a href = "delete_select_ingredients.php">Delete Ingredients</a>
+        </div>
+    </li>
+    <li><a href = "about.html">About</a></li>
+    <li><a href = "future.html">Upcoming</a></li>
+
+</ul>
+        
+        <h1><center>About Erin's CookBook!</center></h1> 
+       <img src="img/IMG_13821.jpg" alt="Erin's Crew" style="float:right;width:50%;height:50%;">
+        <h3>To create a recipe:</h3>
+       <p>First go to the <a href = "select_ingredients.php">Select Ingredients</a> page. From here you can check if all the ingredients are available in the recipe book. If an ingredient is not listed, insert the ingredient first (see below). If all ingredients are available, select each ingredient used in your recipe and then click submit. This will direct you to a page where you can enter the amount of the ingredient required for the recipe. Once you have done this, you will submit the recipe, and viola, the recipe is now stored.</p>
+       
+       <h3>To insert an ingredient:</h3>
+       <p>You will need to insert the ingredient before you can use it in a recipe. To do this, go to the <a href = "create_ingredients.html">Insert Ingredient</a> page. From here you can elect to specify a cost and yield of the ingredient. In this cook book, costing information is provided based on current costing information the the culinary department of Collin County Community College uses to do <a href = "future.html">costing converions</a> on the recipes prepared in class.</p>
+       <p>When inserting an ingredient, make sure the appropriate category is selected to make it easier to locate the ingredient when inserting a recipe. This will make it easier for future projects on this site to create a <a href = "future.html">Mise En Place</a> for our cooks using this site. As you can see, someone has already entered butter as vegetable. Although most users are located in Texas, butter is still not considered a vegetable.</p>
+       <h3>To view all recipes:</h3>
+       <p>The current list of recipes in the cook book are listed in the <a href = "all_recipes.php">View All Recipes</a> page. This page sorts the recipe alphabetically. If you would like to view only a particular recipe, go to the <a href = "select_recipes_first.php">View Selected Recipe</a> page. From here, you can select a recipe and choose a few different options to customize your selection.</p>
+       <h3>To delete:</h3>
+       <p>To delete a recipe go to the <a href = "delete_select_recipe.php">Delete Recipe</a> page. This page will allow you to select a specific recipe to delete. To delete a specific ingredient, go to the <a href = "delete_select_ingredients.php">Delete Ingredients</a> page. We should warn you, that if any recipe contains the ingredient you are trying to delete, you will not be able to delete that ingredient.</p>
+
+   </body>
+    
+  
+</html>
